@@ -32,6 +32,7 @@
     </nav>
   </header>
 
+  <main role="main" id="main">
     <div class="about push" id="about">
       <div class="embed embed-24by10">
         <img class="embed-item" src="images/shrubs.jpg" alt="">
@@ -43,45 +44,44 @@
           <p class="mega push-0 max-length">Yes, shrubberies are my trade—I am a shrubber. My name is Roger the Shrubber. I arrange, design, and sell shrubberies.</p>
         </div>
       </div>
+    </div>
 
-    <main role="main" id="main">
-        <section id="shrubs">
-          <div class="wrapper gutter-1-2">
-            <h2 class="push-0 color-brand-dark">Products</h2>
-            <p class="mega max-length">If you do not tell us where we can buy a shrubbery, my friend and I will say… we will say… “nee”.</p>
-            <ul class="grid list-group">
-              <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
-                <img class="img-flex push" src="images/shrub-1.jpg" alt="" aria-describedat="#grassy-shrubs">
-                <div class="gutter-1-4" id="grassy-shrubs">
-                  <h2 class="mega push-0">Grassy shrubs</h2>
-                  <span>Grassy shrubs are pretty much grass, but I group them together in clumps so they look kinda like shrubs.</span>
-                </div>
-              </li>
-              <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
-                <img class="img-flex push" src="images/shrub-2.jpg" alt="" aria-describedat="#shrubs-with-laurels">
-                <div class="gutter-1-4" id="shrubs-with-laurels">
-                  <h2 class="mega push-0">Shrubs with laurels</h2>
-                  <span>Shrubs with laurels have pretty little flowers that bloom sometime during the summer. They’re nice.</span>
-                </div>
-              </li>
-              <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
-                <img class="img-flex push" src="images/shrub-3.jpg" alt="" aria-describedat="#two-level-shrub">
-                <div class="gutter-1-4" id="two-level-shrub">
-                  <h2 class="mega push-0">Two-level shrubbery</h2>
-                  <span>Two level shrubbery is where I put two shrubs at different heights, usually with a little path running down the middle.</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+    <section id="shrubs">
+      <div class="wrapper gutter-1-2">
+        <h2 class="push-0 color-brand-dark">Products</h2>
+        <p class="mega max-length">If you do not tell us where we can buy a shrubbery, my friend and I will say… we will say… “nee”.</p>
+        <ul class="grid list-group">
+          <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
+            <img class="img-flex push" src="images/shrub-1.jpg" alt="" aria-describedat="#grassy-shrubs">
+            <div class="gutter-1-4" id="grassy-shrubs">
+              <h2 class="mega push-0">Grassy shrubs</h2>
+              <p>Grassy shrubs are pretty much grass, but I group them together in clumps so they look kinda like shrubs.</p>
+            </div>
+          </li>
+          <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
+            <img class="img-flex push" src="images/shrub-2.jpg" alt="" aria-describedat="#shrubs-with-laurels">
+            <div class="gutter-1-4" id="shrubs-with-laurels">
+              <h2 class="mega push-0">Shrubs with laurels</h2>
+              <p>Shrubs with laurels have pretty little flowers that bloom sometime during the summer. They’re nice.</p>
+            </div>
+          </li>
+          <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
+            <img class="img-flex push" src="images/shrub-3.jpg" alt="" aria-describedat="#two-level-shrub">
+            <div class="gutter-1-4" id="two-level-shrub">
+              <h2 class="mega push-0">Two-level shrubbery</h2>
+              <p>Two level shrubbery is where I put two shrubs at different heights, usually with a little path running down the middle.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <section id="prices" class="prices pad-t pad-b">
       <div class="wrapper gutter-1-2">
         <h2 class="push-0 color-brand-dark">Prices</h2>
-        <span class="mega max-length">Even those who arrange and design shrubberies are under considerable economic stress at this period in history.</span>
-
+        <p class="mega max-length">Even those who arrange and design shrubberies are under considerable economic stress at this period in history.</p>
         <table>
-          <caption></caption>
+          <caption>Prices for small, medium and large shrubberies.</caption>
           <thead>
             <tr>
               <th>&nbsp;</th>
@@ -117,7 +117,6 @@
     <section id="news" class="wrapper gutter-1-2 news pad-t pad-b">
       <h2 class="push-0 color-brand-dark">News</h2>
       <p class="mega max-length">Then, when you have found the shrubbery, you must cut down the mightiest tree in the forest… with… a herring!</p>
-
       <ol class="list-group">
         <li class="push">
           <h3 class="push-0"><a href="#">What makes a good shrubbery?</a></h3>
@@ -133,7 +132,6 @@
         </li>
       </ol>
     </section>
-  </main>
 
     <div class="contact pad-t pad-b">
       <div class="wrapper">
@@ -142,16 +140,22 @@
 
         <form class="grid" method="post">
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">Your name</span>
-            <input>
+            <label for="name">
+              <span class="push-1-8">Your name</span>
+            </label>
+            <input id="name">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">E-mail address</span>
-            <input>
+            <label for="email">
+              <span class="push-1-8">E-mail address</span>
+            </label>
+            <input id="email" type="text">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">Type of shrubbery</span>
-            <select>
+            <label for="shrubbery-type">
+              <span class="push-1-8">Type of shrubbery</span>
+            </label>
+            <select id="shrubbery-type">
               <option>Two-level shrubbery</option>
               <option>Small shrubbery</option>
               <option>Shrubbery with laurels</option>
@@ -164,13 +168,13 @@
         </form>
       </div>
     </div>
-  </div>
+  </main>
 
-  <div class="footer pad-t-1-2 pad-b-1-2">
+  <footer role="contentinfo" class="footer pad-t-1-2 pad-b-1-2">
     <div class="wrapper gutter-1-2">
       <p class="push-0 micro">Some quotes © <i>Monty Python and the Holy Grail</i>, 1975.</p>
     </div>
-  </div>
+  </footer>
 
 </body>
 </html>
